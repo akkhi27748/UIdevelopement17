@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tags</title>
 </head>
+
 <body style="background-color: pink;">
+
+    <!-- Non Attribute Tags -->
+
+    <!-- Headings -->
     <h1 id="heading1">HEADING 1(largest)&lt;h1&gt;&lt;/h1&gt;</h1>
     <hr>header tag to seperate section using a line&lt;hr>
     <h2>HEADING 2&lt;h2&gt;&lt;/h2&gt;</h2>
@@ -14,10 +20,14 @@
     <h4>HEADING 4&lt;h4&gt;&lt;/h4&gt;</h4>
     <h5>HEADING 5&lt;h5&gt;&lt;/h5&gt;</h5>
     <h6>HEADING 6(smallest)&lt;h6&gt;&lt;/h6&gt;</h6>
+
+    <!-- p - paragraph and pre tag -->
     <p>&lt;p&gt;&lt;/p&gt;This is paragraph tag!only single spaces are counted and enter is not counted.</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Vero sapiente eaque laudantium! Sed iure quasi, quos eveniet veritatis autem eligendi, sunt dignissimos voluptas in quibusdam accusantium consequuntur cumque est ipsum.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Vero sapiente eaque laudantium! Sed iure quasi, quos
+        eveniet veritatis autem eligendi, sunt dignissimos voluptas in quibusdam accusantium consequuntur cumque est
+        ipsum.</p>
     <p>p tag can be used as self closing tag and can also used the closing &lt;/p&gt; tag<br>
-    Line break!&lt;br&gt;<br>
+        Line break!&lt;br&gt;<br>
     <pre>&nbsp&nbsp&nbsp&lt;pre&gt;&lt;/pre&gt;This is Preformatted text tag!
 Every Spaces   and   enter
 is counted!
@@ -26,6 +36,8 @@ written
 in
 the html.
     </pre>
+
+    <!-- Code tag -->
     Code tag &lt;code&gt;&lt;/code&gt; along with pre tag &lt;pre&gt;&lt;/pre&gt;
     <pre>
         &lt;pre&gt;
@@ -46,7 +58,12 @@ the html.
               }
         </code>
     </pre>
-    &nbsp&nbsp&nbsp&nbspNon Breaking Spaces!& nbsp(do not give space btw & and nbsp)<br>
+
+    <!-- to give spaces in html -->
+    Blank&nbsp;&nbsp;&nbsp;&nbsp;Space.....Non Breaking Spaces! &amp;nbsp;<br>
+
+
+    <!-- Semantic and Non-Semantic tags -->
     <p>Semantic tags</p>
     This is <strong>Strong Tag&lt;strong&gt;&lt;/strong&gt;</strong><br>
     This is <em>Emphasis Tag&lt;em&gt;&lt;/em&gt;</em><br>
@@ -63,15 +80,30 @@ the html.
     This is <i>Italic Tag</i>&lt;i&gt;&lt;/i&gt;<br>
     This is <u>Underline Tag</u>&lt;u>&lt;/u><br>
     This is <s>Strike Tag</s>&lt;s&gt;&lt;/s&gt; or &lt;strike&gt;&lt;/strike&gt;Deprecated<br>
-    This is <span style="background-color: mark;">Span Tag</span>&lt;span&gt;&lt;/span&gt; It can be used inside inline element<br>
+    This is <span style="background-color: mark;">Span Tag</span>&lt;span&gt;&lt;/span&gt; It can be used inside inline
+    element<br>
     This is <big>big tag</big> &lt;big&gt;&lt;/big&gt;This is Deprecated.<br>
+
+
+    <!-- Attribute Tags -->
+
+    <!-- Anchor Tag -->
     &lt;a&gt;&lt;/a&gt; a tag is used to add hyperlink to a text or image.<br>
     <a href="https://www.google.com">Click this to open Google!!</a><br>
-    <a href="https://www.facebook.com" target="_blank">Click this to open facebook in new tab!!</a>(we used attribute target="_blank")<br>
-    <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" download="html">Download HTML image.</a><br>
+    <a href="https://www.facebook.com" target="_blank">Click this to open facebook in new tab!!</a>(we used attribute
+    target="_blank")<br>
+    <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"
+        download="html">Download HTML image.
+    </a><br>
     Open Wikipedia by clicking on image!<br>
-    <a href="https://en.wikipedia.org/wiki/HTML"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="" width="20%" height="20%"></a>
-    
+    <a href="https://en.wikipedia.org/wiki/HTML"><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"
+            alt="" width="20%" height="20%">
+    </a>
+
+
+
+    <!-- List in HTML -->
     <h3>Unordered List</h3>
     <ul style="list-style-type:square;">
         <li>List with symbol like bullet!</li>
@@ -88,7 +120,7 @@ the html.
         <li type="1">Fourth</li>
         <li type="a">Fifth</li>
     </ol>
-    
+
     <h3>Description List</h3>
     <dl>
         <dt>Unordered List:</dt><!--<dt>description term</dt>-->
@@ -99,9 +131,12 @@ the html.
         <dd>-List with title and its description!</dd>
     </dl>
 
-    <h3>Table:</h3><pre>tr-table row, th-table heading, td-table data</pre>
-    <table border="2px" height="50%" width="auto"&gt;
-        <tr bgcolor="cyan">
+
+    <!-- Tables in HTML -->
+    <h3>Table:</h3>
+    <pre>tr-table row, th-table heading, td-table data</pre>
+    <table style="border:2px;" height="50%" width="auto">
+        <tr style="background-color: cyan">
             <th>SL.NO</th>
             <th>FIRST NAME</th>
             <th>LAST NAME </th>
@@ -115,21 +150,21 @@ the html.
             <td>21</td>
             <td>8910181574</td>
         </tr>
-        <tr bgcolor="red">
+        <tr style="background-color: red">
             <td>2</td>
             <td>Sanjiv</td>
             <td>Verma</td>
             <td>46</td>
             <td>8456126977</td>
         </tr>
-        <tr bgcolor="orange">
+        <tr style="background-color: orange">
             <td>3</td>
             <td>Harmanpreet</td>
             <td>Kaur</td>
             <td>31</td>
             <td>9564123874</td>
         </tr>
-        <tr bgcolor="grey">
+        <tr style="background-color: grey">
             <td>4</td>
             <td>xxx</td>
             <td>xxx</td>
@@ -138,6 +173,8 @@ the html.
         </tr>
     </table>
 
+
+    <!-- Audio Tag -->
     <h3>Audio</h3>
     DOG: <br>
     <audio controls src="big_dog_bark.mp3"></audio>
@@ -146,9 +183,13 @@ the html.
     <br> HORSE: <br>
     <audio controls src="horse.mp3"></audio>
 
+
+    <!-- Video Tag -->
     <h3>Video</h3>
     <video width="50%" controls src="animal.mp4"></video>
 
+
+    <!-- Button in HTML -->
     <h3>Buttons</h3>
 
     <button name="simple_button" type="button">Button</button>
@@ -163,41 +204,49 @@ the html.
 
     <button onclick="alert('You clicked on a button')">Alert!</button>
     <br><br>
-    <a href="https://www.google.com/"><button style="background-color:#176bef; border-radius: 30px; border: #000;"><span style="color:#ff3e30; font-size: 25px;">Go</span><span style="color:#f7b529 ;font-size: 25px;">og</span><span style="color:#179c52; font-size: 25px;">le</span></button></a>
+    <a href="https://www.google.com/"><button style="background-color:#176bef; border-radius: 30px; border: #000;"><span
+                style="color:#ff3e30; font-size: 25px;">Go</span><span
+                style="color:#f7b529 ;font-size: 25px;">og</span><span
+                style="color:#179c52; font-size: 25px;">le</span></button></a>
     <br><br>
+
+    <!-- Forms in HTML -->
     <div style="border-style:solid;height: fit-content;width: fit-content;margin: auto;padding: 20px;">
-    <form>
-        <label for="first_name"&gt;First Name:</label>
-        <input type="text" id="first_name" name="first_name" placeholder="Ex.Jack">&nbsp;&nbsp;&nbsp;
-        <label for="last_name">Last Name:</label>
-        <input type="text" id="last_name" placeholder="Ex.Daniel">
-        <br><br>
-        <label for="phone_no">Phone:</label>
-        <input type="tel" id="phone_no" placeholder="+91123456780">
-        <br><br>
-        <label for="gender">Gender:</label>
-        <input type="radio" value="Male" id="Male" name="gender">
-        <label for="Male">Male</label>
-        <input type="radio" value="Female" id="Female" name="gender">
-        <label for="Female">Female</label>
-        <input type="radio" value="transgender" id="transgender" name="gender">
-        <label for="transgender">Transgender</label>
-        <br><br>
-        <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday" name="birthday">
-        <label for="course">Course:</label>
-        <select name="course" id="course">
-            <option value="none" selected disabled hidden>--Select-course--</option>
-            <option value="b.tech">B.TECH</option>
-            <option value="m.tech">M.TECH</option>
-            <option value="bba">BBA</option>
-            <option value="civil">CIVIL</option>
-            <option value="mechanical">MECHANICAL</option>
-        </select>
-    </form>
+        <form>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" placeholder="Ex.Jack">&nbsp;&nbsp;&nbsp;
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" placeholder="Ex.Daniel">
+            <br><br>
+            <label for="phone_no">Phone:</label>
+            <input type="tel" id="phone_no" placeholder="+91123456780">
+            <br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" value="Male" id="Male" name="gender">
+            <label for="Male">Male</label>
+            <input type="radio" value="Female" id="Female" name="gender">
+            <label for="Female">Female</label>
+            <input type="radio" value="transgender" id="transgender" name="gender">
+            <label for="transgender">Transgender</label>
+            <br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+            <label for="course">Course:</label>
+            <select name="course" id="course">
+                <option value="none" selected disabled hidden>--Select-course--</option>
+                <option value="b.tech">B.TECH</option>
+                <option value="m.tech">M.TECH</option>
+                <option value="bba">BBA</option>
+                <option value="civil">CIVIL</option>
+                <option value="mechanical">MECHANICAL</option>
+            </select>
+        </form>
     </div>
+
+    <!-- Bookmark -->
     <a href="#heading1">Go to Heading 1</a>
-    
-    
+
+
 </body>
+
 </html>
