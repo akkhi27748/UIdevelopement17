@@ -19,12 +19,36 @@
             border: 3px solid green;
             color: brown;
         }
+        #sec1{
+            border: 2px solid crimson;
+            margin: 5px;
+            background-color: antiquewhite;
+        }
+
+        #sec2{
+            border: 4px solid brown;
+            margin: 5px;
+            background-color: lightgrey;
+        }
     </style>
 </head>
 <body>
     <div id="div1">This is div1</div>
-    <p id="div1">This is p with div id</p>
+    <p id="div1">This is p with same id as div id.(This is technically wrong as id should be unique.)</p>
     <div id="div2">This is div2</div>
     <div id="div3">This is div3</div>
+
+    <section id="sec1">
+        <div class="division">Section 1 div 1</div>
+        <div class="division">Section 1 div 2</div>
+        <div class="division">Section 1 div 3</div>
+    </section>
+
+    <section id="sec2">
+        <div class="division">Section 2 div 1</div>
+        <div class="division">Section 2 div 2</div>
+        <div class="division">Section 2 div 3</div>
+    </section>
+
 </body>
 </html>

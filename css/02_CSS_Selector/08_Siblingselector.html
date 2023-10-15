@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sibling selector</title>
+    <style>
+        div+p{
+            color: red;
+        }
+        section~p{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Adjacent Sibling selector -->
+    <div>This is division for Adjacent sibling selector div+p</div>
+    <p>Para 1</p>
+    <p>Para 2</p>
+    <p>Para 3</p>
+
+    <!-- General sibling selector -->
+    <section>This is section for general sibling selector section~p</section>
+    <p>Para 1</p>
+    <p>Para 2</p>
+    <p>Para 3</p>
+</body>
+</html>
