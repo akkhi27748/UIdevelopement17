@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Selector</title>
+    <style>
+        p::first-letter{
+            font-size: 20px;
+            color: crimson;
+        }
+
+        p::first-line{
+            border: 2px solid blue;
+            color: blue;
+        }
+        p::selection{
+            background-color: yellowgreen ;
+        }
+
+        p::before{
+            content:"Hello ";
+        }
+
+        p::after{
+            content:" World!";
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ad voluptatum quis eos atque sequi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae deleniti, amet voluptatum labore quisquam rem quia nihil eveniet! Nobis rem vitae reprehenderit veniam provident ducimus, rerum eaque dolore quas doloribus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nostrum, id obcaecati eos earum at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis soluta error, quibusdam voluptatem suscipit quod. Itaque magnam repudiandae, enim recusandae quisquam quos quod quae ducimus voluptatum odio delectus deleniti nulla?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, ratione? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, iste praesentium sapiente consequuntur sequi fugit. Ad error eaque optio adipisci facilis, eius, qui quam debitis a omnis veniam, sit doloribus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quaerat eum consequatur consequuntur in. Tenetur vel architecto culpa repellat labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ea quasi voluptatum accusamus, error quis blanditiis eius rem pariatur doloribus expedita harum ducimus saepe, aut tempore neque repellendus eos suscipit!</p>
+</body>
+</html>

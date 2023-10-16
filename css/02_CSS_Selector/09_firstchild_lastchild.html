@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Child Last Child</title>
+    <style>
+        ol li:first-child{
+            border: 2px solid brown;
+        }
+
+        ol li:last-child{
+            border: 2px solid red;
+        }
+        ul li:first-child{
+            border: 2px solid brown;
+        }
+
+        ul li:last-child{
+            border: 2px solid red;
+        }
+
+        ul li:first-child,
+        ol li:first-child{
+            color: crimson;
+        }
+        ul li:last-child,
+        ol li:last-child{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+        <li>Six</li>
+    </ol>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+        <li>Six</li>
+    </ul>
+</body>
+</html>
