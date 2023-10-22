@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #main_div{
+    display: flex;
+
+
+} */
+
+.sub_div{
+    border: 2px solid blue;
+    padding: 10px;
+    margin: 0 5px;
+    height: 10vw;
+    width: 10vw;
+}
+
+#div1{
+    background-color: cadetblue;
+}
+#div2{
+    background-color: crimson;
+}
+#div3{
+    background-color: bisque;
+    position: absolute;
+    left: 15vw;
+    top: 0;
+}
+#div4{
+    background-color: cornflowerblue;
+}
