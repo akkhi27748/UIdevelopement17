@@ -4,11 +4,13 @@
     box-sizing: border-box;
 }
 
-/* #main_div{
-    display: flex;
+#main_div{
+    position: absolute;
+    left: 45%;
+    top: 45%;
 
 
-} */
+}
 
 .sub_div{
     border: 2px solid blue;
@@ -16,6 +18,8 @@
     margin: 0 5px;
     height: 10vw;
     width: 10vw;
+    position:relative;
+    
 }
 
 #div1{
@@ -23,13 +27,16 @@
 }
 #div2{
     background-color: crimson;
+    left: 20px;
+    top: 40px;
 }
 #div3{
     background-color: bisque;
-    position: absolute;
-    left: 15vw;
-    top: 0;
+    left: 50px;
+    top: 80px;
 }
 #div4{
     background-color: cornflowerblue;
+    left: 100px;
+    top: 120px;
 }

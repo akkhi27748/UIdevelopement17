@@ -136,7 +136,7 @@ the html.
     <!-- Tables in HTML -->
     <h3>Table:</h3>
     <pre>tr-table row, th-table heading, td-table data</pre>
-    <table style="border:2px;" height="50%" width="auto">
+    <table style="border-collapse: collapse;" height="50%" width="auto" >
         <tr style="background-color: cyan">
             <th>SL.NO</th>
             <th>FIRST NAME</th>
@@ -231,7 +231,8 @@ the html.
             <label for="transgender">Transgender</label>
             <br><br>
             <label for="birthday">Birthday:</label>
-            <input type="date" id="birthday" name="birthday">
+            <input type="date" id="birthday" name="birthday" >
+            <input type="file" name="fle1">
             <label for="course">Course:</label>
             <select name="course" id="course">
                 <option value="none" selected disabled hidden>--Select-course--</option>
@@ -246,6 +247,32 @@ the html.
 
     <!-- Bookmark -->
     <a href="#heading1">Go to Heading 1</a>
+
+
+    <script>
+        function allowDrop(ev) { ev.preventDefault(); }
+        function drag(ev) { ev.dataTransfer.setData("text/html", ev.target.id); }
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text/html");
+            ev.target.appendChild(document.getElementById(data));
+        }  
+    </script>
+    <p>Drag the javatpoint image into the rectangle:</p>
+    <div id="div1" style="width:350px;height:100px;padding:10px;border:1px solid #aaaaaa;" ondrop="drop(event)"
+        ondragover="allowDrop(event)"></div>
+    <br>
+    <img id="drag1"
+        src="./favicon.ico"
+        alt="javatpoint image" draggable="true" ondragstart="drag(event)" />
+
+    <img id="drag2"
+        src="./favicon.ico"
+        alt="javatpoint image" draggable="true" ondragstart="drag(event)" />
+
+    <img id="drag3"
+        src="./favicon.ico"
+        alt="javatpoint image" draggable="true" ondragstart="drag(event)" />
 
 
 </body>

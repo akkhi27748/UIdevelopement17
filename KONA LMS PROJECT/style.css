@@ -1,6 +1,8 @@
 /* Akhilesh */
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=IBM+Plex+Sans:ital,wght@1,300&family=Indie+Flower&family=Josefin+Sans&family=Potta+One&family=Roboto&family=Source+Code+Pro&display=swap');
+@import url(https://db.onlinewebfonts.com/c/56ee0a3bf4422be57bbc6f8a76bd68c9?family=Caros+Bold);
+
 *{
     padding: 0;
     margin: 0;
@@ -17,6 +19,7 @@
     --josefin-sans : 'Josefin Sans', sans-serif;
     --source-code : 'Source Code Pro', monospace;
     --ibm-plex : 'IBM Plex Sans', sans-serif;
+    --caros-bold: 'Caros Bold';
 
 }
 
@@ -57,7 +60,7 @@ a{
     font-size: 3rem;
     width: 10vw;
     height: 100%;
-    font-family: var(--source-code);
+    font-family: var(--caros-bold);
     font-weight: 700;
     text-decoration: none;
     color: crimson;
@@ -90,8 +93,9 @@ a{
     padding: 10px;
     
 }
-.dropdowns li{
+.dropdown_list{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -99,6 +103,43 @@ a{
 
 .dropdowns li a{
     color: black;
+}
+
+.dropdown_text_container{
+    height: 4rem;
+    width: 100%;
+}
+
+.dropdown_text_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown_option{
+    min-width: 10vw;
+    max-width: max-content;
+    list-style: none;
+    position: absolute;
+    top: 4.5rem;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bolder;
+    background-color: crimson;
+    color: white;
+    padding: 0 0.5rem;
+    visibility: hidden;
+
+
+}
+
+.options{
+    padding: 0 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.dropdown_list:hover .dropdown_option{
+    visibility: visible;
 }
 
 .list_button{
@@ -168,7 +209,7 @@ a{
 .summary_title{
     font-size: 2.25rem;
     padding: 0 0 1.4rem 0;
-    font-family: var(--roboto);
+    font-family: var(--caros-bold);
 }
 
 .summary_title span{
@@ -192,6 +233,7 @@ a{
 .btn{
     font-size: 1.05rem;
     font-weight: bold;
+    font-family: var(--caros-bold);
     padding: 0.8rem 1.30rem;
     border-radius: 2rem;
     /* border: none; */
@@ -306,6 +348,7 @@ a{
     border: none;
     background-color: transparent;
     color: crimson;
+    cursor: pointer;
 }
 
 .container3{

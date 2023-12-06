@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .s1{
+            width: 100%;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 0.5rem;
+            padding: 0.4rem;
+        }
+
+        .c1{
+            border: 2px solid blue;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="s1">
+        <div class="c1">A</div>
+        <div class="c1">B</div>
+        <div class="c1">C</div>
+        <div class="c1">D</div>
+    </section>
+    <section class="s2">
+        <div class="c2">A</div>
+        <div class="c2">B</div>
+        <div class="c2">C</div>
+        <div class="c2">D</div>
+    </section>
+    <section class="s3">
+        <div class="c3">A</div>
+        <div class="c3">B</div>
+        <div class="c3">C</div>
+        <div class="c3">D</div>
+    </section>
+    
+</body>
+</html>

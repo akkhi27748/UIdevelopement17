@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lang Translation</title>
+</head>
+<body>
+    <h1>How are you?</h1>
+    <br>
+    <label for="lang" >Translate it to: </label>
+    <select onchange="translateLang()" name="language" id="lang">
+        <option value="hindi">hindi</option>
+        <option value="russian">russian</option>
+        <option value="italian">italian</option>
+        <option value="sanskrit">sanskrit</option>
+        <option value="portuguese">portuguese</option>
+        <option value="default" selected disabled >Select a language.</option>
+    </select>
+    
+    <script>
+        
+        function translateLang(){
+            var text = document.querySelector("#lang").value;
+            console.clear();
+            switch (text) {
+                case "hindi": console.log("आप कैसे हैं?"); break;
+                case "russian": console.log("Как вы?"); break;
+                case "italian": console.log("Come stai ?"); break;
+                case "sanskrit": console.log("भवान्‌ कथमसि?"); break;
+                case "portuguese": console.log("Como vai você?"); break;
+            }
+        };
+    </script>
+</body>
+</html>

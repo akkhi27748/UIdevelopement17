@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insta Like</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 20vw;
+            height: 10vh;
+            padding: 5px 10px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 2rem;
+
+        }
+
+        .like_icon {
+            /* border: 2px solid black; */
+            position: relative;
+            width: 5vh;
+            height: 5vh;
+            bottom: 5px;
+            left: 50%;
+        }
+
+        .bx {
+            position: absolute;
+            top: 32px;
+            left: 61px;
+            display: flex;
+        }
+
+        .bxs-heart {
+            visibility: hidden;
+            color: red;
+            animation-iteration-count: 2;
+            animation-duration: 1.2s;
+            ;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <span id="like_icon"><i class='bx bx-heart'
+                id="icon_unlike" ondblclick="likeIncrement()"></i><i class='bx bxs-heart bx-burst' id="icon_like" onclick="unlike()"></i></span>
+        <span id="count_like">0</span>
+    </div>
+
+    <script>
+        let count = document.getElementById('count_like').innerText;
+        console.log(count);
+        let flag = false;
+
+        if (flag == false) {
+            flag = true;
+            function likeIncrement() {
+                document.getElementById('icon_unlike').style.visibility = "hidden";
+                document.getElementById('icon_like').style.visibility = "visible";
+                document.getElementById('count_like').innerText = ++count;
+            }
+        }
+        if (flag == true) {
+            flag = false;
+            function unlike() {
+                document.getElementById('icon_unlike').style.visibility = "visible";
+                document.getElementById('icon_like').style.visibility = "hidden";
+                document.getElementById('count_like').innerText = --count;
+
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
